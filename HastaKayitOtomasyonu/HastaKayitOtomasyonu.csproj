@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA769539-3905-4C33-8D8F-69FDAE61E841}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HastaKayitOtomasyonu</RootNamespace>
+    <AssemblyName>HastaKayitOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaKayit.Designer.cs">
+      <DependentUpon>HastaKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaKayitGörüntüle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaKayitGörüntüle.Designer.cs">
+      <DependentUpon>HastaKayitGörüntüle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menü.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menü.Designer.cs">
+      <DependentUpon>Menü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Muayene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Muayene.Designer.cs">
+      <DependentUpon>Muayene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MuayeneGörüntüle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuayeneGörüntüle.Designer.cs">
+      <DependentUpon>MuayeneGörüntüle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandevuGörüntüle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandevuGörüntüle.Designer.cs">
+      <DependentUpon>RandevuGörüntüle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Randevu_Al.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Randevu_Al.Designer.cs">
+      <DependentUpon>Randevu_Al.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recete.Designer.cs">
+      <DependentUpon>Recete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceteGörüntüle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceteGörüntüle.Designer.cs">
+      <DependentUpon>ReceteGörüntüle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeshisBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeshisBilgileri.Designer.cs">
+      <DependentUpon>TeshisBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeshisGörüntüle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeshisGörüntüle.Designer.cs">
+      <DependentUpon>TeshisGörüntüle.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaKayit.resx">
+      <DependentUpon>HastaKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaKayitGörüntüle.resx">
+      <DependentUpon>HastaKayitGörüntüle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menü.resx">
+      <DependentUpon>Menü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Muayene.resx">
+      <DependentUpon>Muayene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuayeneGörüntüle.resx">
+      <DependentUpon>MuayeneGörüntüle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RandevuGörüntüle.resx">
+      <DependentUpon>RandevuGörüntüle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Randevu_Al.resx">
+      <DependentUpon>Randevu_Al.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recete.resx">
+      <DependentUpon>Recete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceteGörüntüle.resx">
+      <DependentUpon>ReceteGörüntüle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeshisBilgileri.resx">
+      <DependentUpon>TeshisBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeshisGörüntüle.resx">
+      <DependentUpon>TeshisGörüntüle.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
